@@ -1,0 +1,87 @@
+/*
+********************************************************************************
+* gest-fiction gest Fiction module v1.0
+*
+* An ePub fiction-oriented CSS by Leonardo Giordani
+* This work is licensed under a
+* Creative Commons Attribution 4.0 International License.
+* CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+*
+* This CSS can be used with gest.css and defines elements that
+* are typical of fiction, such as dialogue font styles.
+*
+********************************************************************************
+*/
+
+/*
+********************************************************************************
+* PARAGRAPH STYLES
+********************************************************************************
+*/
+
+/*
+* Sentences of a poem or song when the work is not quoted inside a sentence.
+*/
+p.poem {
+	font-style: italic;
+}
+
+
+/*
+********************************************************************************
+* SPAN STYLES
+********************************************************************************
+*/
+
+/*
+* As a general rule: do not nest the folloging spans.
+* Fore example: if you get a foreign word in a inner dialogue just
+* treat it as a standard word.
+*/
+
+/*
+* Foreign words according to the language spoken in the text
+* For example, "adab" is a foreign word in Dune in the context
+* of the standard language spoken by characters. In the same novel
+* "Kwisatz Haderach" is a foreign word in the first chapters, when it
+* is new for the main character. Later it becomes a common word.
+* Another example: "ent" is not a foreign word in The Lord of the Rings
+* being part of the Common Speech, while "éored" is foreign since it
+* is a word in the Rohirric language, but the conversation between Aragorn
+* and Éomer is being held in Common Speech.
+*/
+span.foreign {
+	font-style: italic;
+}
+
+/*
+* Any part of the text that has to be highlighted. For example when someone
+* cries out loud, or when stressing a work in a sentence.
+*/
+span.strong {
+	font-style: italic;
+}
+
+/*
+* This is the title of a work (book, painting) or the nickname of
+* someone/something
+*/
+span.title {
+	font-style: italic;
+}
+
+/*
+* Use this class when explicitly quoting the sentence of another person or
+* source (e.g. book, tv, ...). Usually quotes are enclosed between «», which
+* shall be left outside the span.
+*/
+span.quote {
+	font-style: italic;
+}
+
+/*
+* Inner thoughts and dialogue.
+*/
+span.inner-dialogue {
+	font-style: italic;
+}

@@ -1,0 +1,369 @@
+/*
+********************************************************************************
+* gest - Generic ePub Stylesheet v1.0
+*
+* A basic ePub CSS by Leonardo Giordani
+* This work is licensed under a
+* Creative Commons Attribution 4.0 International License.
+* CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+*
+* This is an unspecialized CSS which contains elements valid for the
+* the majority of books.
+*
+********************************************************************************
+*/
+
+
+/*
+* NOMENCLATURE
+*
+* Nomenclature in the publishing environment is hard. This paragraph is NOT
+* a glossary of this art, but a guide to the terms used in this CSS and an
+* explanation of their possible meanings.
+*
+* Book: a complete work by an author, that can usually be read independently.
+*       Can be also called novel. Can be part of a bigger work made of
+*       several books, in which case it is usually not independent and
+*       may be called volume number 1,2,3,... of the series.
+*
+* Part: part of a book, suche as a volume, which has been divided for
+        convenience, or a book if part of a series. usually the use of this name
+*       suggests that the book cannot be separated from the other books of the
+*       series. Sometimes books are just divided into parts and not splitted into
+*       phisical volumes.
+*
+* Series: an ordered collection of books, each of which is usually not
+*         independent. Can also be called saga, epic, etc.
+*
+* Example: "Foundation" is a series of books by Isaac Asimov. It is composed of
+* seven volumes: the original trilogy, two prequels, and two sequels. The
+* original trilogy can be read separately.
+*
+* Example: "The Lord of the Rings" is a single book divided in three volumes
+* (The Fellowship of the Ring, The Two Towers, and The Return of the King). The
+* whole book is divided in several "books": books I and II in TFotR, books III
+* and IV in TTT, and books V and VI in TRotK. Each book then has its own
+* chapters. The set of volumes is however NOT a series but a single book.
+*
+* Example: "Dune" is splitted into three parts, which are not however released
+* as stand-alone volumes.
+*
+*/
+
+/*
+********************************************************************************
+* BODY STYLE
+********************************************************************************
+*/
+
+body {
+	font-family: "Georgia", "serif";
+    font-size: 0.9em;
+	border: 0;
+    margin: 0 1em 0;
+    padding: 0;
+    text-align: left;
+}
+
+
+/*
+********************************************************************************
+* PART TITLE PAGE
+********************************************************************************
+*
+* This page may be used to separate important parts of the book, such as
+* different volumes, or even chapters if for example the book is divided
+* in just 3-4 big chapters.
+*
+* You can use this style to set up a page with the title of each (sub-)book
+* or part.
+*
+*/
+body#part-title-page {
+	text-align: center;
+	font-weight: bold;
+	margin: 5em 0;
+	text-transform: uppercase;
+}
+
+body#part-title-page div.part-title {
+}
+
+body#part-title-page div.part-title h1 {
+	font-size: 150%;
+}
+
+body#part-title-page div.part-title p {
+	font-size: 110%;
+}
+
+
+/*
+********************************************************************************
+* FRONT COVER PAGE
+********************************************************************************
+*
+* Usually contains just an image, e.g. the paper cover scan
+*
+*/
+body#cover-page {
+}
+
+body#cover-page div#cover img {
+	max-width: 100%;
+	max-heigth: 100%;
+}
+
+
+/*
+********************************************************************************
+* TITLE PAGE
+********************************************************************************
+*
+* The main page containing title and author: basically the cover page without an image
+*
+*/
+body#title-page {
+	text-align: center;
+	padding: 4em 0;
+}
+
+body#title-page div#author {
+	font-size: 140%;
+}
+
+body#title-page div#author p {
+	margin: 0;
+}
+
+body#title-page div#title {
+	font-size: 200%;
+	font-weight: bold;
+}
+
+body#title-page div#title p {
+	margin: 0.6em 0 0.5em 0;
+}
+
+body#title-page div#original-title {
+	font-style: italic;
+	font-size: 90%;
+}
+
+body#title-page div#original-title p {
+	margin: 0;
+}
+
+body#title-page div#publisher {
+	font-size: 90%;
+}
+
+body#title-page div#publisher p {
+	margin: 0.5em 0;
+}
+
+
+/*
+********************************************************************************
+* FRONT MATTER PAGE
+********************************************************************************
+*
+* The front matter page contains the nuts and bolts of the book’s
+* publication—information like title, author, publisher,
+* ISBN, copyright, etc.
+*
+*/
+body#front-matter-page {
+}
+
+
+/*
+********************************************************************************
+* DEDICATION PAGE
+********************************************************************************
+*/
+body#dedication-page {
+}
+
+
+/*
+********************************************************************************
+* ACKNOWLEDGEMENT PAGE
+********************************************************************************
+*/
+body#acknowledgements-page {
+}
+
+
+/*
+********************************************************************************
+* TABLE OF CONTENTS PAGE
+********************************************************************************
+*/
+body#toc-page {
+}
+
+
+/*
+********************************************************************************
+* FOREWORD PAGE
+********************************************************************************
+*
+* Foreword is usually written by someone other than the author
+*
+*/
+body#foreword-page {
+}
+
+body#foreword-page div#title {
+}
+
+body#foreword-page div#title h2 {
+	text-align: center;
+	font-size: 150%;
+	text-transform: uppercase;
+}
+
+body#foreword-page div#title p {
+	text-align: center;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/*
+********************************************************************************
+* INTRODUCTION PAGE
+********************************************************************************
+*
+* Generally written by the author
+*
+*/
+body#introduction-page {
+}
+
+body#introduction-page div#title {
+}
+
+body#introduction-page div#title h2 {
+	text-align: center;
+	font-size: 150%;
+	text-transform: uppercase;
+}
+
+body#introduction-page div#title p {
+	text-align: center;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+/*
+********************************************************************************
+* CONTENT PAGE
+********************************************************************************
+*/
+body#content-page {
+}
+
+body#content-page div.chapter-title {
+}
+
+body#content-page div.chapter-title h2 {
+	text-align: center;
+	font-size: 150%;
+}
+
+body#content-page div.chapter-title p {
+	text-align: center;
+	font-size: 110%;
+	font-weight: bold;
+}
+
+body#content-page div.chapter-quote {
+	font-size: 80%;
+	text-align: justify;
+	margin: 3em 0 3em;
+}
+
+body#content-page div.chapter-quote p.quote {
+	font-style: italic;
+}
+
+body#content-page div.chapter-quote p.source {
+	font-weight: bold;
+	text-align: right;
+}
+
+body#content-page div.chapter-text {
+	text-align: justify;
+}
+
+body#content-page div.chapter-text p {
+	line-height: 110%;
+	margin: 0 0 0.4em;
+}
+
+body#content-page div.term-list {
+}
+
+body#content-page div.term-list ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+body#content-page div.term-list ul li.section {
+	margin-top: 2em;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+body#content-page div.term-list ul li span.term {
+	font-weight: bold;
+}
+
+body#content-page div.term-list ul li span.text {
+}
+
+/*
+********************************************************************************
+* PICTURE PAGE
+********************************************************************************
+*
+* A page containing just a picture, like illustrations or maps.
+*
+*/
+body#picture-page {
+}
+
+body#picture-page img {
+	max-width: 100%;
+	max-heigth: 100%;
+}
+
+
+/*
+********************************************************************************
+* END MATTER PAGE
+********************************************************************************
+*
+* End matter page body: appendices, glossary, bibliography, indexes
+*
+*/
+body#end-matter-page {
+}
+
+/*
+********************************************************************************
+* END PAGE
+********************************************************************************
+*
+* This page may be used to contain the end of the book. Usually just the word
+* "end", but may also contain a final sentence or dedication.
+*
+*/
+body#end-page {
+	text-align: center;
+	font-weight: bold;
+	margin: 5em 0;
+	text-transform: uppercase;
+}
