@@ -1,8 +1,10 @@
 /*
 ********************************************************************************
-* gest-fiction gest Fiction module v1.0
+* gest-fiction gest Fiction module v1.1
 *
 * An ePub fiction-oriented CSS by Leonardo Giordani
+* Official repository: https://github.com/lgiordani/gest
+* 
 * This work is licensed under a
 * Creative Commons Attribution 4.0 International License.
 * CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
@@ -14,30 +16,40 @@
 */
 
 /*
-********************************************************************************
-* PARAGRAPH STYLES
-********************************************************************************
-*/
-
-/*
-* Sentences of a poem or song when the work is not quoted inside a sentence.
-*/
-p.poem {
-	font-style: italic;
-}
-
-
-/*
-********************************************************************************
-* SPAN STYLES
-********************************************************************************
-*/
-
-/*
 * As a general rule: do not nest the folloging spans.
 * Fore example: if you get a foreign word in a inner dialogue just
 * treat it as a standard word.
 */
+
+/*
+* Sentences of a poem or song.
+*/
+span.poem {
+	font-style: italic;
+}
+
+div.poem {
+	text-align: center;
+	font-style: italic;
+	margin: 2em 0 2em;
+}
+
+/*
+* This is part of a written message, a sign or a label quoted in the text
+* e.g.: "He pushed the <span class="message">Enter</span> button"
+*/
+span.message {
+	font-style: italic;
+}
+
+div.message {
+	text-align: left;
+	margin: 2em 0 2em 2em;
+}
+
+div.message p {
+	margin: 0 0 0.5em;
+}
 
 /*
 * Foreign words according to the language spoken in the text

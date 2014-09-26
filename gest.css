@@ -1,11 +1,13 @@
 /*
 ********************************************************************************
-* gest - Generic ePub Stylesheet v1.0
+* gest - Generic ePub Stylesheet v1.1
 *
 * A basic ePub CSS by Leonardo Giordani
+* Official repository: https://github.com/lgiordani/gest
+* 
 * This work is licensed under a
 * Creative Commons Attribution 4.0 International License.
-* CC BY 4.0 - http://creativecommons.org/licenses/by/4.0/
+* CC BY 4.0 - http://creativecommons.o/licenses/by/4.0/
 *
 * This is an unspecialized CSS which contains elements valid for the
 * the majority of books.
@@ -81,12 +83,12 @@ body {
 */
 body#part-title-page {
 	text-align: center;
-	font-weight: bold;
 	margin: 5em 0;
-	text-transform: uppercase;
 }
 
 body#part-title-page div.part-title {
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 body#part-title-page div.part-title h1 {
@@ -95,6 +97,20 @@ body#part-title-page div.part-title h1 {
 
 body#part-title-page div.part-title p {
 	font-size: 110%;
+}
+
+body#part-title-page div.quote {
+	font-size: 80%;
+	text-align: center;
+	margin: 3em 0 3em;
+}
+
+body#part-title-page div.quote p.quote {
+	font-style: italic;
+}
+
+body#part-title-page div.quote p.source {
+	font-weight: bold;
 }
 
 
@@ -154,12 +170,26 @@ body#title-page div#original-title p {
 	margin: 0;
 }
 
+body#title-page div#contribution {
+	font-size: 90%;
+	margin: 2em 0;
+}
+
+body#title-page div#contribution p.type {
+	font-size: 70%;
+	margin: 0 0 0.3em;
+}
+
+body#title-page div#contribution p.value {
+	margin: 0;
+}
+
 body#title-page div#publisher {
 	font-size: 90%;
 }
 
 body#title-page div#publisher p {
-	margin: 0.5em 0;
+	margin: 2em 0;
 }
 
 
@@ -183,6 +213,7 @@ body#front-matter-page {
 ********************************************************************************
 */
 body#dedication-page {
+	text-align: right;
 }
 
 
@@ -302,6 +333,11 @@ body#content-page div.chapter-text p {
 	margin: 0 0 0.4em;
 }
 
+body#content-page div.chapter-text p.separator {
+	text-align: center;
+	margin: 1em 0 1em;
+}
+
 body#content-page div.term-list {
 }
 
@@ -322,6 +358,24 @@ body#content-page div.term-list ul li span.term {
 }
 
 body#content-page div.term-list ul li span.text {
+}
+
+body#content-page a.footnote {
+}
+
+body#content-page a.footnote sup {
+	font-size: 70%;
+}
+
+body#content-page div.footnotes {
+	margin-top: 3em;
+}
+
+body#content-page div.footnotes div {
+	margin-bottom: 1em;
+}
+
+body#content-page div.footnotes div p {
 }
 
 /*
@@ -366,4 +420,32 @@ body#end-page {
 	font-weight: bold;
 	margin: 5em 0;
 	text-transform: uppercase;
+}
+
+/*
+********************************************************************************
+* BIOGRAPHY PAGE
+********************************************************************************
+*
+* This page may be used to contain the biography of the author(s). May contain
+* a picture.
+*
+*/
+body#biography-page {
+}
+
+body#biography-page div.picture {
+	text-align: center;
+}
+
+body#biography-page div.picture img {
+	max-width: 50%;
+}
+
+body#biography-page div.picture p.caption{
+	font-size: 70%;
+}
+
+body#biography-page div.story {
+	text-align: justify;
 }
